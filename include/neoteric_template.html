@@ -1,0 +1,76 @@
+<?php  define('LOADED',true); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>
+!!title!!
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000CC" alink="#00FFFF" leftmargin="0" topmargin="0" marginwidth="5" marginheight="0">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF">
+  <tr align="left" valign="top"> 
+    <td height="50" background="../images/banner.jpg">
+<table width="600" height="50" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td width="200">&nbsp;</td>
+          <td width="404" align="left" valign="middle"><em><strong><font color="#FFFFFF" size="+3" face="Arial, Helvetica, sans-serif">
+	  !!header!!
+	  </font></strong></em></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td align="left" bgcolor="#FFFFFF"> <div align="justify"> 
+        <div align="left"></div>
+      </div>
+      <table width="100%" height="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr> 
+          <td width="170" align="left" valign="top" background="../images/sideband.jpg"> 
+            <table width="170" border="1" align="center" cellpadding="5" cellspacing="0" bordercolor="#000000" bgcolor="#FFFFFF">
+              <tr> 
+                <td><form name="form1">
+                    <div align="center"> <font color="#000066"> 
+                      <select name="modSelect" id="modSelect" onChange="MM_jumpMenu('parent',this,0)">
+                        <option selected disabled>Select a Module</option>
+                        <option value="../project/editProject.php">Projects</option>
+                        <option value="../manager/jobs/jobLookup.php">Jobs</option>
+                        <option value="../inventory/editPart.php">Inventory</option>
+                        <option value="/">Timecards</option>
+                        <option value="../purchase_orders/purchaseOrder.php">Purchase Orders</option>
+                        <option value="../subcontractor/subcontractorOrder.php">Subcontract Orders</option>
+                        <option value="/">Quotes</option>
+                        <option value="/">Invoices</option>
+                        <option value="../contacts/contactLookup.php">Contacts</option>
+                        <option value="../forecasting/forecast.php">Forecasting</option>
+                        <option value="/">Costing</option>
+                        <option value="/">Managerial Tasks</option>
+                      </select>
+                      </font></div>
+                  </form></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" bordercolor="#000000"><font color="#000066" size="-1" face="Arial, Helvetica, sans-serif"><strong>
+		!!menu!!
+		</strong></font></td>
+              </tr>
+            </table>
+          </td>
+          <td align="left" valign="top" bgcolor="#FFFFFF">
+	  !!break!!
+	  </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
